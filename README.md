@@ -1,106 +1,53 @@
-# Offline Banking Assistant - 100% Offline AI
+# Omni-Assist 🚀 - One AI for Everything
+
+> Your Private, 100% Offline & Unlimited AI Assistant. No API Key. No Tracking. No Limits.
+
+**Omni-Assist** is not just another chatbot. It's your personal **Sathi** that works for every domain - from Banking to Coding, without ever needing the internet.
+
+![License](https://img.shields.io/badge/License-MIT-green)
+![Offline](https://img.shields.io/badge/Offline-100%25-blue)
+![Tauri](https://img.shields.io/badge/Powered%20by-Tauri-orange)
+
+### 🔴 Live Demo
+**Web Version:** `https://omni-assist.vercel.app` (coming soon)
+**Desktop Version:** Download from Releases
 
 ![Demo](./screenshots/offline-banking-assistant.gif)
 
-> 100% Offline Banking AI Desktop App built with Tauri + React + Ollama (phi3:mini). No API keys, no internet needed.
+### ✨ Why Omni-Assist?
 
-Offline Banking Assistant AI Desktop and Web is a cross-platform desktop application that runs AI models locally via Ollama. It provides a private, fast chat interface for interacting with LLMs without sending data to the cloud, targeting low-resource machines and offline usage.
+| Old Banking Assistant | New Omni-Assist |
+| :--- | :--- |
+| Only Banking | Banking, Study, Health, Coding, General |
+| One Use Case | One AI for Everything |
 
-Key Features
+### 🎯 Domains Covered
 
-- **100% Offline:** Runs locally using Ollama. No internet required after initial setup.
-- **Privacy by Design:** All prompts, context, and responses remain on the local machine.
-- **Premium User Experience:** Clean chat interface with conversation history and streaming responses.
-- **Optimized for Low-End Hardware:** Default model `phi3:mini` (~2.2GB) runs efficiently on CPU with <4GB RAM.
-- **Lightweight Distribution:** Built with Tauri, producing small installers.
-- **Cross-Platform:** Supports Windows, macOS, and Linux from a single codebase.
+- 🏦 **Banking & Finance:** UPI, loans, fraud detection, financial advice
+- 📚 **Study Sathi:** Homework help, exam prep, concepts in Hinglish
+- 💻 **Code Buddy:** Write, debug & explain code in any language
+- 🩺 **Health Guide:** General wellness & diet info (Not a medical diagnosis)
+- 💬 **General Chat:** Your daily ChatGPT alternative, offline
 
-Technology Stack
+### 🔒 Core Features
+
+- **100% Offline:** Runs on Ollama `llama3.2:1b` - your data never leaves your device.
+- **Unlimited Free:** No daily limits like ChatGPT/Gemini.
+- **Privacy First:** Zero data collection. We don't even have a database.
+- **Super Lightweight:** Built with Tauri (Rust) - < 15MB app vs 200MB Electron apps.
+- **Cross Platform:** Works on Desktop (Windows/Mac/Linux) & Web (via WebLLM)
+
+### 🛠️ Tech Stack
 
 - **Frontend:** React + Vite
-- **Desktop Layer:** Tauri (Rust)
-- **AI Engine:** Ollama Chat API
-- **Model:** `phi3:mini` (default), examples: `llama3.2:3b`, `llama3.1:8b`
-- **Styling:** Vanilla CSS (no external UI framework dependency)
+- **Desktop:** Tauri (Rust)
+- **AI Engine:** Ollama + WebLLM (for web version)
+- **Deployment:** Vercel (Web) + GitHub Releases (Desktop)
 
-Getting Started
+### 🚀 Quick Start (Web Version)
 
-Prerequisites
-
-- Node.js 18 or higher
-- Rust (https://www.rust-lang.org/tools/install)
-- Ollama (https://ollama.com/download)
-
-Installation
-
-1. Clone the repository and change directory:
-
-   git clone https://github.com/your-username/bank-ai-desktop.git
-   cd bank-ai-desktop
-
-2. Install dependencies:
-
-   npm install
-
-3. Pull the default model locally with Ollama:
-
-   ollama pull phi3:mini
-
-4. Start development (web):
-
-   npm run dev
-
-5. Run the Tauri native development window:
-
-   npm run tauri dev
-
-Notes on models
-
-- The default target is `phi3:mini` for minimal RAM usage. To try larger models, pull them with Ollama (e.g., `ollama pull llama3.2:3b`). Ensure sufficient disk and memory for larger models.
-
-Build & Packaging
-
-- Build web assets:
-
-  npm run build
-
-- Package the Tauri application for your platform:
-
-  npm run tauri build
-
-(See Tauri docs for platform-specific packaging, signing, and installer creation.)
-
-Artifacts will be available at:
-
-src-tauri\target\release\bundle\
-- Windows: .msi & .exe
-- macOS: .dmg
-- Linux: .deb & AppImage
-
-Project structure (important files)
-
-- src/ — React application source
-- public/ — static assets
-- src-tauri/ — Tauri configuration and Rust-side code
-- package.json — project scripts and dependencies
-- vite.config.js — Vite configuration
-
-Environment variables and security
-
-- Keep API keys and secrets out of source control. Use environment variables or OS-level secret stores for any integrations that require credentials.
-
-Contributing
-
-- Open issues for bugs or feature requests.
-- Fork the repo, create a topic branch, and open a pull request.
-- Use clear commit messages and include relevant test or reproduction steps.
-
-License
-
-- Add your preferred license (e.g., MIT) at the repository root.
-
-Contact
-
-- For questions or help, open an issue or contact the maintainers.
-
-Thank you for using Bank AI Desktop — a private, lightweight, offline-capable desktop client for local LLM experimentation and usage.
+```bash
+git clone https://github.com/radheshyamdhangar/omni-assist.git
+cd omni-assist
+npm install
+npm run dev
