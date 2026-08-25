@@ -11,6 +11,7 @@
     "test": "echo \"No tests yet\" && exit 0"
   },
   "dependencies": {
+    "@mlc-ai/web-llm": "^0.2.84",
     "@tauri-apps/api": "^2",
     "@tauri-apps/plugin-opener": "^2",
     "react": "^19.1.0",
