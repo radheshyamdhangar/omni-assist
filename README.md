@@ -3,7 +3,7 @@
 
 > Your Private Offline Sathi for Everything - No Internet, No Data Leak!
 
-!![Omni-Assist](screenshot.png)
+![Omni-Assist](screenshot.png)
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://omni-assist.vercel.app)
 [![Offline](https://img.shields.io/badge/100%25-Offline-green?style=for-the-badge)](https://github.com/radheshyamdhangar/omni-assist)
